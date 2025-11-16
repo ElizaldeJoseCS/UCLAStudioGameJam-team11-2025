@@ -74,6 +74,7 @@ public class stackController : MonoBehaviour
     {
         if (currentSlice.transform.position.y < -5)
         {
+            //reloads the scene
             UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         }
     }
