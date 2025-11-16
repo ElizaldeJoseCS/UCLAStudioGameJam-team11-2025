@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cursor
   - Target
+  - Bar
   layers:
   - Default
   - TransparentFX

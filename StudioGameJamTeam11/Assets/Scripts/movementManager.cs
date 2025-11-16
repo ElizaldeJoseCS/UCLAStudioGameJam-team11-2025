@@ -12,6 +12,6 @@ public class movementManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(speed * Time.fixedDeltaTime, 0, 0);
+        transform.Translate(-speed * Time.fixedDeltaTime, 0, 0);
     }
 }
