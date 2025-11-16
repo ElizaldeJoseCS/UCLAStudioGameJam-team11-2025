@@ -7,11 +7,14 @@ public class GameManager : MonoBehaviour
     // --- Drag these in the Inspector ---
     [Tooltip("The button that starts the timer.")]
     public GameObject startButton;
-    
+
     [Tooltip("The button that stops the timer.")]
     public GameObject stopButton;
-    
+
     [Tooltip("The TextMeshPro UI element to show results.")]
+
+    public TextMeshProUGUI currentTime;
+
     public TextMeshProUGUI resultText;
     // ------------------------------------
 
@@ -31,11 +34,12 @@ public class GameManager : MonoBehaviour
         if (gameRunning) return; // Safety check
 
         gameRunning = true;
-        
+
         // --- THIS IS THE KEY ---
         // Store the exact moment in time when the button was clicked
         startTime = Time.time;
         // -----------------------
+
 
         Debug.Log("Counter Started!");
 
@@ -43,6 +47,17 @@ public class GameManager : MonoBehaviour
         startButton.SetActive(false);
         stopButton.SetActive(true);
         resultText.text = "Timing... Click Stop when you think 10s have passed!";
+    }
+
+    void Update()
+    {
+
+        if (!startButton.activeSelf)
+        {
+            float elapsedTime = Time.time - startTime;
+
+            currentTime.text = $" {elapsedTime:F2} seconds!\n";
+        }
     }
 
     public void StopGame()
@@ -59,14 +74,33 @@ public class GameManager : MonoBehaviour
         // Calculate how close the player was to 10 seconds
         float difference = Mathf.Abs(elapsedTime - 10f);
 
+
         Debug.Log($"Counter Stopped! Elapsed time: {elapsedTime} seconds");
 
         // Update UI
         stopButton.SetActive(false);
         startButton.SetActive(true); // Show start button to let them play again
-        
+
+        float counter = elapsedTime;
+        currentTime.text = $" {counter:F2} seconds!\n";
+
         // Display the result, formatted to 2 decimal places (e.g., "10.12")
-        resultText.text = $"You stopped at {elapsedTime:F2} seconds!\n" +
-                          $"You were {difference:F2} seconds off.";
+
+        if (elapsedTime >= 7 && elapsedTime <= 10)
+        {
+            resultText.text = $"Close Enough";
+        }
+        else if (elapsedTime < 7)
+        {
+            resultText.text = $"You stopped at {elapsedTime:F2} seconds!\n" +
+                              $"You were {difference:F2} seconds off.";
+        }
+        else
+        {
+            resultText.text = $"You stopped at {elapsedTime:F2} seconds!\n" +
+                              $"You were {difference:F2} seconds off.";
+        }
+
     }
+
 }
