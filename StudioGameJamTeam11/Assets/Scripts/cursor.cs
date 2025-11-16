@@ -3,14 +3,15 @@ using UnityEngine.InputSystem;
 
 public class cursor : MonoBehaviour
 {
-    [SerializeField] public int cursorSpeed = 1;
+    [SerializeField] public float cursorSpeed = 1f;
     [SerializeField] public int degreeBoundary = 40;
     [SerializeField] GameObject collisionDetector;
-    private int cursorIncrement; // this will be changed positive to negative when we hit the bounds
+    private float cursorIncrement; // this will be changed positive to negative when we hit the bounds
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cursorIncrement = cursorSpeed;
+        collisionDetector.GetComponent<CollisionDetector>().setDegree(degreeBoundary);
     }
 
     // Update is called once per frame
