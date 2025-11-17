@@ -634,6 +634,9 @@ MonoBehaviour:
   - name: waterpour
     clip: {fileID: 8300000, guid: 0b57512170dbf4ebeb415a86e2d941c5, type: 3}
     volume: 0.5
+  - name: stacking
+    clip: {fileID: 8300000, guid: fb2993536b4c4425d856004eadbed47a, type: 3}
+    volume: 0.5
 --- !u!4 &450824979
 Transform:
   m_ObjectHideFlags: 0
@@ -744,6 +747,14 @@ PrefabInstance:
     - target: {fileID: 2292546211118479835, guid: 58b77edc79f6018499f37854442445e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2555275065477787040, guid: 58b77edc79f6018499f37854442445e9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621817378581440825, guid: 58b77edc79f6018499f37854442445e9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3200762380827294874, guid: 58b77edc79f6018499f37854442445e9, type: 3}
       propertyPath: m_LocalRotation.w
