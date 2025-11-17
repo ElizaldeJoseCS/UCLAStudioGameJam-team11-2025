@@ -67,9 +67,9 @@ public class cursor : MonoBehaviour
         {
             // hit
             collisionDetector.GetComponent<CollisionDetector>().Destroy();
-            if(numHits < numTargets)
-                collisionDetector.GetComponent<CollisionDetector>().placeNewTarget();
             numHits++;
+            if (numHits < numTargets)
+                collisionDetector.GetComponent<CollisionDetector>().placeNewTarget();
         }
         // miss
         else 
