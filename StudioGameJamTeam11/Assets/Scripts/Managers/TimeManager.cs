@@ -84,7 +84,12 @@ public class TimeManager : MonoBehaviour
         float difference = Mathf.Abs(elapsedTime - 10f);
 
         // Update UI
-        if (stopButton) stopButton.SetActive(false);
+        if (stopButton)
+        {
+            stopButton.SetActive(false);
+            SFXandMusic.instance.PlaySFX("ovenend", transform.position);
+
+        }
         if (startButton) startButton.SetActive(true);
 
         // Display the result

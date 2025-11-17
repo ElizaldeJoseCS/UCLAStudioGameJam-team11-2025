@@ -40,6 +40,8 @@ public class tapAndHold : MonoBehaviour
     public void OnJump()
     {
         animEnlarge();
+        if(gameObject.activeInHierarchy)
+        SFXandMusic.instance.PlaySFX("stacking", transform.position);
 
         // tap mechanics
         if (validTarget)
@@ -72,6 +74,7 @@ public class tapAndHold : MonoBehaviour
             if (destory)
             {
                 Destroy(other.gameObject);
+                SFXandMusic.instance.PlaySFX("stacking", transform.position);
                 destory = false;
                 changeColor();
                 hits++;
@@ -82,6 +85,7 @@ public class tapAndHold : MonoBehaviour
         if (holding)
         {
             validHoldTarget = true;
+
             changeColor();
         }
         else
@@ -101,6 +105,8 @@ public class tapAndHold : MonoBehaviour
             if (holding && validHoldTarget)
             {
                 Destroy(other.gameObject);
+                SFXandMusic.instance.PlaySFX("stacking", transform.position);
+
                 changeColor();
                 hits++;
             }
