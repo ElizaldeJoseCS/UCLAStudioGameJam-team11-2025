@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
 
         // Display the result, formatted to 2 decimal places (e.g., "10.12")
 
-        if (elapsedTime >= 7 && elapsedTime <= 10)
+        if (elapsedTime >= 7 && elapsedTime <= 13)
         {
             resultText.text = $"Close Enough";
         }
