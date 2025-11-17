@@ -13,7 +13,10 @@ public class TimeManager : MonoBehaviour
     // ------------------------------------
 
     private bool gameRunning = false;
-    private float startTime; 
+    private float startTime;
+
+    private bool gameFinished = false;
+    private bool win = false;
 
     void Start()
     {
@@ -87,10 +90,23 @@ public class TimeManager : MonoBehaviour
             if (elapsedTime >= 7 && elapsedTime <= 13)
             {
                 resultText.text = $"Close Enough";
+                win = true;
+
             }
             else
                 resultText.text = $"You stopped at {elapsedTime:F2} seconds!\n" +
                                   $"You were {difference:F2} seconds off.";
+            gameFinished = true;
         }
+    }
+
+    public bool isFinished()
+    {
+        return gameFinished;
+    }
+
+    public bool winGame()
+    {
+        return win;
     }
 }

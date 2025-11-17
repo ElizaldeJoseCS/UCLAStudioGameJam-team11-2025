@@ -11,21 +11,30 @@ public class minigameManager : MonoBehaviour
     [SerializeField] GameObject loseArt1;
     [SerializeField] GameObject startingArt;
     [SerializeField] GameObject secondMinigameArt;
+    [SerializeField] GameObject timeGuess;
+    [SerializeField] GameObject winArt2;
+    [SerializeField] GameObject loseArt2;
 
-    void checkIfPassOrFail()
+    void checkHoldAndRelease()
     {
         // if 10% of hits is greater than misses then pass
         if (tapper.GetComponent<tapAndHold>().isFinished())
         {
             if (tapper.GetComponent<tapAndHold>().win())
-            {
                 StartCoroutine(winMinigame1());
-            }
             else
-            {
                 StartCoroutine(loseMinigame1());
-            }
+        }
+    }
 
+    void checkTimeGuess()
+    {
+        if (timeGuess.GetComponent<TimeManager>().isFinished())
+        {
+            if (timeGuess.GetComponent<TimeManager>().winGame())
+                StartCoroutine(winMinigame2());
+            else
+                StartCoroutine(loseMinigame2());
         }
     }
 
@@ -64,6 +73,33 @@ public class minigameManager : MonoBehaviour
         secondMinigameArt.SetActive(true);
     }
 
+    IEnumerator winMinigame2()
+    {
+        yield return new WaitForSeconds(1.0f);
+        blurBG.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        secondMinigameArt.SetActive(false);
+        timeGuess.SetActive(false);
+        winArt2.SetActive(true);
+
+        StartCoroutine(nextScene());
+    }
+
+    IEnumerator loseMinigame2()
+    {
+        yield return new WaitForSeconds(1.0f);
+        blurBG.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        secondMinigameArt.SetActive(false);
+        timeGuess.SetActive(false);
+        loseArt2.SetActive(true);
+        StartCoroutine(backToMainMenu());
+    }
+
+    IEnumerator nextScene()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(3);
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -75,7 +111,10 @@ public class minigameManager : MonoBehaviour
     void Update()
     {
         if(tapper.activeInHierarchy)
-            checkIfPassOrFail();
+            checkHoldAndRelease();
+
+        if(timeGuess.activeInHierarchy)
+            checkTimeGuess();
 
     }
 }
