@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Letters/DormLetter.unity
     guid: f75c0f8a1ea2940ddbbbb1a859e06de5
   - enabled: 1
-    path: Assets/Scenes/Level One.unity
+    path: Assets/Scenes/Levels/Level One.unity
     guid: 2dc21054649874b3f972e8be2273bcff
   - enabled: 1
-    path: Assets/Scenes/CulinaryLetter.unity
+    path: Assets/Scenes/Letters/CulinaryLetter.unity
     guid: eb14337ba3df846d39f9219fffbc73a9
   - enabled: 0
     path: Assets/Scenes/MIniGames/Dredge.unity

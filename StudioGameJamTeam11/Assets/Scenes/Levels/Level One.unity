@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 564989626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3927617, y: 0.30624092, z: -0.011894978}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -179,8 +179,8 @@ Transform:
   m_GameObject: {fileID: 858038556}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3103617, y: -0.42534092, z: 0.011894978}
-  m_LocalScale: {x: 16.2047, y: 10.3182, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 18, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 564989627}
@@ -458,7 +458,7 @@ Transform:
   m_GameObject: {fileID: 1021304238}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3927617, y: -0.30624092, z: 0.011894978}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -474,6 +474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838043394}
   - component: {fileID: 1838043393}
+  - component: {fileID: 1838043395}
   m_Layer: 0
   m_Name: AXLTL - Basic_9
   m_TagString: Untagged
@@ -545,12 +546,30 @@ Transform:
   m_GameObject: {fileID: 1838043392}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3172383, y: -1.9762409, z: 0.011894978}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 564989627}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1838043395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838043392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77920cd4180e3cc4ba0d4b20b509be04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  downLoopTime: 1
+  upLoopTime: 0.7
+  restTime: 0.1
+  distance: 0.7
+  amplitude: 1
+  frequency: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
