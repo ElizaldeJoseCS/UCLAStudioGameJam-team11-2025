@@ -7,6 +7,7 @@ TagManager:
   - Cursor
   - Target
   - Bar
+  - Hold
   layers:
   - Default
   - TransparentFX
