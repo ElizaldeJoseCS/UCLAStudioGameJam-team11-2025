@@ -18,20 +18,29 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level One.unity
     guid: 2dc21054649874b3f972e8be2273bcff
   - enabled: 1
+    path: Assets/Scenes/Letters/McLotLetter.unity
+    guid: 5c12924b8a5a54dab94e0a6849b32b99
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level Two.unity
+    guid: 6581474fd97784dadbafd2119ea8831b
+  - enabled: 1
     path: Assets/Scenes/Letters/CulinaryLetter.unity
     guid: eb14337ba3df846d39f9219fffbc73a9
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level Three.unity
+    guid: 2a97bf9afd7c64f86bf44c134cce79ef
+  - enabled: 1
+    path: Assets/Scenes/Letters/RestaurantLetter.unity
+    guid: d068cf0123ba94f90b8c80bb9ed5cde8
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level Four.unity
+    guid: df27a690d38a841fe8cb77359067756c
   - enabled: 0
     path: Assets/Scenes/MIniGames/Dredge.unity
     guid: 062fa822a3ee24926be1d966ccb7d99b
   - enabled: 0
     path: Assets/Scenes/MIniGames/HoldAndRelease.unity
     guid: 690aceeba7fb7014fa79980c141ff481
-  - enabled: 1
-    path: Assets/Scenes/Letters/McLotLetter.unity
-    guid: 5c12924b8a5a54dab94e0a6849b32b99
-  - enabled: 1
-    path: Assets/Scenes/Letters/RestaurantLetter.unity
-    guid: d068cf0123ba94f90b8c80bb9ed5cde8
   - enabled: 0
     path: Assets/Scenes/MIniGames/Stacking.unity
     guid: 2649aaef9dea9844a9ee90ca3ae4935f

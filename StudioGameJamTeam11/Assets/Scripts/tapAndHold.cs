@@ -3,7 +3,7 @@ using UnityEngine;
 public class tapAndHold : MonoBehaviour
 {
     [SerializeField] float animTime = 0.1f;
-    [SerializeField] int totalTargets = 7;
+    [SerializeField] int totalTargets = 10;
 
     //private variables
     bool validTarget = false;

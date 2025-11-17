@@ -11,6 +11,7 @@ public class minigameManager : MonoBehaviour
     [SerializeField] GameObject loseArt1;
     [SerializeField] GameObject startingArt;
     [SerializeField] GameObject secondMinigameArt;
+    [SerializeField] GameObject timeManager;
     [SerializeField] GameObject timeGuess;
     [SerializeField] GameObject winArt2;
     [SerializeField] GameObject loseArt2;
@@ -29,9 +30,9 @@ public class minigameManager : MonoBehaviour
 
     void checkTimeGuess()
     {
-        if (timeGuess.GetComponent<TimeManager>().isFinished())
+        if (timeManager.GetComponent<TimeManager>().isFinished())
         {
-            if (timeGuess.GetComponent<TimeManager>().winGame())
+            if (timeManager.GetComponent<TimeManager>().winGame())
                 StartCoroutine(winMinigame2());
             else
                 StartCoroutine(loseMinigame2());
@@ -89,7 +90,7 @@ public class minigameManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         blurBG.GetComponent<SpriteRenderer>().sortingOrder = 2;
         secondMinigameArt.SetActive(false);
-        timeGuess.SetActive(false);
+        timeManager.SetActive(false);
         loseArt2.SetActive(true);
         StartCoroutine(backToMainMenu());
     }
@@ -113,7 +114,7 @@ public class minigameManager : MonoBehaviour
         if(tapper.activeInHierarchy)
             checkHoldAndRelease();
 
-        if(timeGuess.activeInHierarchy)
+        if(timeManager.activeInHierarchy)
             checkTimeGuess();
 
     }
