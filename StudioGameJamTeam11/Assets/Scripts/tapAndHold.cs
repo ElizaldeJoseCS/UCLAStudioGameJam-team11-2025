@@ -1,9 +1,9 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class tapAndHold : MonoBehaviour
 {
     [SerializeField] float animTime = 0.1f;
+    [SerializeField] int totalTargets = 7;
 
     //private variables
     bool validTarget = false;
@@ -13,6 +13,9 @@ public class tapAndHold : MonoBehaviour
     bool colorChanged = false;
     SpriteRenderer spriteRenderer;
     float currTime = 0f;
+
+    int hits = 0;
+    int misses = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,10 +26,10 @@ public class tapAndHold : MonoBehaviour
     void Update()
     {
         if (colorChanged)
-        { 
+        {
             currTime += Time.deltaTime;
-            if(currTime >= animTime)
-                {
+            if (currTime >= animTime)
+            {
                 spriteRenderer.color = Color.black;
                 colorChanged = false;
                 currTime = 0f;
@@ -34,7 +37,7 @@ public class tapAndHold : MonoBehaviour
         }
     }
 
-    void OnJump()
+    public void OnJump()
     {
         animEnlarge();
 
@@ -45,13 +48,15 @@ public class tapAndHold : MonoBehaviour
         }
         else 
         {
-            Debug.Log("missed");
+            // I don't think I want to add anything
+            // for if you click and miss only if a target
+            // leaves the screen without being hit
         }
 
         holding = true;
     }
 
-    void OnReleaseButton()
+    public void OnReleaseButton()
     {
         animReduce();
 
@@ -69,6 +74,7 @@ public class tapAndHold : MonoBehaviour
                 Destroy(other.gameObject);
                 destory = false;
                 changeColor();
+                hits++;
             }
         }
 
@@ -76,6 +82,7 @@ public class tapAndHold : MonoBehaviour
         if (holding)
         {
             validHoldTarget = true;
+            changeColor();
         }
         else
         {
@@ -95,6 +102,7 @@ public class tapAndHold : MonoBehaviour
             {
                 Destroy(other.gameObject);
                 changeColor();
+                hits++;
             }
         }
     }
@@ -113,5 +121,20 @@ public class tapAndHold : MonoBehaviour
     {
         spriteRenderer.color = Color.yellow;
         colorChanged = true;
+    }
+
+    public void targetMissed()
+    {
+        misses++;
+    }   
+
+    public bool win()
+    {
+        return (hits*0.2f) > misses;
+    }
+
+    public bool isFinished()
+    {
+        return (hits + misses) >= totalTargets;
     }
 }

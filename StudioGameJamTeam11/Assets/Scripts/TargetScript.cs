@@ -3,6 +3,8 @@ using UnityEngine;
 public class TargetScript : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+
+    [SerializeField] GameObject tapper;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,12 +15,12 @@ public class TargetScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (transform.position.x <= 5)
+        if (transform.position.y <= 5)
         {
             show();
         }
         // if the target goes off screen to the left, delete it and update (the score and also create a new target)
-        if (transform.position.x <= -5)
+        if (transform.position.y <= -5)
         {
             deleteAndUpdate();
         }
@@ -26,7 +28,7 @@ public class TargetScript : MonoBehaviour
     void deleteAndUpdate()
     {
         // update the score
-        
+        tapper.GetComponent<tapAndHold>().targetMissed();
         // delete this target
         Destroy(gameObject);
     }
