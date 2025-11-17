@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 79ff52ce6cc9e4713b8b427338ab41d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8047719024277822754
+    second: AXLTL - Culinary School_0
+  - first:
+      213: -434081833185145830
+    second: AXLTL - Culinary School_1
+  - first:
+      213: -3138896901605883045
+    second: AXLTL - Culinary School_2
+  - first:
+      213: 6287886793298690371
+    second: AXLTL - Culinary School_3
+  - first:
+      213: 1651162488460463291
+    second: AXLTL - Culinary School_4
+  - first:
+      213: 8502745918329277147
+    second: AXLTL - Culinary School_5
+  - first:
+      213: -6578763598357945263
+    second: AXLTL - Culinary School_6
+  - first:
+      213: 8360785626099848812
+    second: AXLTL - Culinary School_7
+  - first:
+      213: 6105974193126781706
+    second: AXLTL - Culinary School_8
+  - first:
+      213: -6884145673622077268
+    second: AXLTL - Culinary School_9
+  - first:
+      213: 5601783012732271037
+    second: AXLTL - Culinary School_10
+  - first:
+      213: -8605407540245960599
+    second: AXLTL - Culinary School_11
+  - first:
+      213: 6136913839811419986
+    second: AXLTL - Culinary School_12
+  - first:
+      213: -5985894956109711580
+    second: AXLTL - Culinary School_13
+  - first:
+      213: 2204057755636663616
+    second: AXLTL - Culinary School_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 548
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d9b3e50dd3faf60800000000000000
+      internalID: 8047719024277822754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 566
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c8c816fd4d9f9f0800000000000000
+      internalID: -434081833185145830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 566
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53053906e56074d0800000000000000
+      internalID: -3138896901605883045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 537
+        width: 45
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341407e49bf034750800000000000000
+      internalID: 6287886793298690371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 535
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcc227f88b1ae610800000000000000
+      internalID: 1651162488460463291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 560
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bda4b6dfc52dff570800000000000000
+      internalID: 8502745918329277147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 557
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154aa92fc5983b4a0800000000000000
+      internalID: -6578763598357945263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 568
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c669fd6ca3a770470800000000000000
+      internalID: 8360785626099848812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 548
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0336058d27ccb450800000000000000
+      internalID: 6105974193126781706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 331
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0c6bdcbf99670a0800000000000000
+      internalID: -6884145673622077268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 548
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db979b678f78dbd40800000000000000
+      internalID: 5601783012732271037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 533
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 968eb208f63739880800000000000000
+      internalID: -8605407540245960599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 543
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f532f5f92ba2550800000000000000
+      internalID: 6136913839811419986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_13
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 540
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42737468044ddeca0800000000000000
+      internalID: -5985894956109711580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Culinary School_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0450b25e9d2669e10800000000000000
+      internalID: 2204057755636663616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AXLTL - Culinary School_0: 8047719024277822754
+      AXLTL - Culinary School_1: -434081833185145830
+      AXLTL - Culinary School_10: 5601783012732271037
+      AXLTL - Culinary School_11: -8605407540245960599
+      AXLTL - Culinary School_12: 6136913839811419986
+      AXLTL - Culinary School_13: -5985894956109711580
+      AXLTL - Culinary School_14: 2204057755636663616
+      AXLTL - Culinary School_2: -3138896901605883045
+      AXLTL - Culinary School_3: 6287886793298690371
+      AXLTL - Culinary School_4: 1651162488460463291
+      AXLTL - Culinary School_5: 8502745918329277147
+      AXLTL - Culinary School_6: -6578763598357945263
+      AXLTL - Culinary School_7: 8360785626099848812
+      AXLTL - Culinary School_8: 6105974193126781706
+      AXLTL - Culinary School_9: -6884145673622077268
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: f7bf39a58403043bab830d808bd83399
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1708679390897233333
+    second: AXLTL - Basic_0
+  - first:
+      213: -7145565026832557172
+    second: AXLTL - Basic_1
+  - first:
+      213: 5705559530026491399
+    second: AXLTL - Basic_2
+  - first:
+      213: -3835483757646119135
+    second: AXLTL - Basic_3
+  - first:
+      213: -1649243273771752589
+    second: AXLTL - Basic_4
+  - first:
+      213: -7810765583622574099
+    second: AXLTL - Basic_5
+  - first:
+      213: -8961313765046571163
+    second: AXLTL - Basic_6
+  - first:
+      213: 2868059505818628433
+    second: AXLTL - Basic_7
+  - first:
+      213: -304344670909875357
+    second: AXLTL - Basic_8
+  - first:
+      213: 8685852986184854545
+    second: AXLTL - Basic_9
+  - first:
+      213: 5851281870075838819
+    second: AXLTL - Basic_10
+  - first:
+      213: 5612210629253160928
+    second: AXLTL - Basic_11
+  - first:
+      213: -4548537800966352463
+    second: AXLTL - Basic_12
+  - first:
+      213: 6184828757967476558
+    second: AXLTL - Basic_13
+  - first:
+      213: -3029278881061688882
+    second: AXLTL - Basic_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AXLTL - Basic_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 548
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bdd5716ad276b710800000000000000
+      internalID: 1708679390897233333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 566
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8bd038877ad5dc90800000000000000
+      internalID: -7145565026832557172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 566
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ed218c9283e2f40800000000000000
+      internalID: 5705559530026491399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 537
+        width: 45
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ff8bbf7df95cac0800000000000000
+      internalID: -3835483757646119135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 534
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373e1a60bf5bc19e0800000000000000
+      internalID: -1649243273771752589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 560
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def645cb5169a9390800000000000000
+      internalID: -7810765583622574099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_6
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 557
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56fa4991c9403a380800000000000000
+      internalID: -8961313765046571163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 568
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1517007cce46dc720800000000000000
+      internalID: 2868059505818628433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_8
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 548
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b32216220c6cbf0800000000000000
+      internalID: -304344670909875357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 331
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c60d475495a8870800000000000000
+      internalID: 8685852986184854545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 548
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361cd820cdde33150800000000000000
+      internalID: 5851281870075838819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 518
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef5e4125d392ed40800000000000000
+      internalID: 5612210629253160928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_12
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 543
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1d6fd18f850e0c0800000000000000
+      internalID: -4548537800966352463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_13
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 540
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47954b9cfce4d550800000000000000
+      internalID: 6184828757967476558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AXLTL - Basic_14
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 0
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9a9b058e6d5f5d0800000000000000
+      internalID: -3029278881061688882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AXLTL - Basic_0: 1708679390897233333
+      AXLTL - Basic_1: -7145565026832557172
+      AXLTL - Basic_10: 5851281870075838819
+      AXLTL - Basic_11: 5612210629253160928
+      AXLTL - Basic_12: -4548537800966352463
+      AXLTL - Basic_13: 6184828757967476558
+      AXLTL - Basic_14: -3029278881061688882
+      AXLTL - Basic_2: 5705559530026491399
+      AXLTL - Basic_3: -3835483757646119135
+      AXLTL - Basic_4: -1649243273771752589
+      AXLTL - Basic_5: -7810765583622574099
+      AXLTL - Basic_6: -8961313765046571163
+      AXLTL - Basic_7: 2868059505818628433
+      AXLTL - Basic_8: -304344670909875357
+      AXLTL - Basic_9: 8685852986184854545
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
