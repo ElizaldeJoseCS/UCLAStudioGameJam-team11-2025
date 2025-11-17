@@ -1,12 +1,16 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class cursor : MonoBehaviour
 {
+    [SerializeField] public int numTargets = 10;
     [SerializeField] public float cursorSpeed = 1f;
     [SerializeField] public int degreeBoundary = 40;
     [SerializeField] GameObject collisionDetector;
     private float cursorIncrement; // this will be changed positive to negative when we hit the bounds
+
+    private int numHits = 0;
+    private int numMisses = 0;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,19 +60,37 @@ public class cursor : MonoBehaviour
         return false;
     }
 
-    void OnJump()
+    public void OnJump()
     {
         // check if the collider is on the target
         if (collisionDetector.GetComponent<CollisionDetector>().IsTouching())
         {
             // hit
             collisionDetector.GetComponent<CollisionDetector>().Destroy();
+            if(numHits < numTargets)
+                collisionDetector.GetComponent<CollisionDetector>().placeNewTarget();
+            numHits++;
         }
         // miss
         else 
         { 
+            Debug.Log("missed");
             // implement the miss stuff here
+            numMisses++;
         }
+    }
 
+    public bool isFinished()
+    {
+        return (numHits + numMisses) >= numTargets;
+    }
+
+    public bool winGame()
+    {
+        Debug.Log("Hits: " + numHits + " Misses: " + numMisses);
+        // need at least 80% hits to win
+        float hitRate = (float)numHits / (float)(numHits + numMisses);
+        Debug.Log("Hit Rate: " + hitRate);
+        return hitRate >= 0.8f;
     }
 }

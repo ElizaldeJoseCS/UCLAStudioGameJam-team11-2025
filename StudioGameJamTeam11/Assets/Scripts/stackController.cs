@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class stackController : MonoBehaviour
 {
+    [SerializeField] int numSlices = 6;
     [SerializeField] GameObject stackSlice;
     [SerializeField] float speed = 3f;
     [SerializeField] int bounds = 4;
@@ -11,6 +12,7 @@ public class stackController : MonoBehaviour
     private bool isDropping = false;
     private int iteration = 1;
     private GameObject currentSlice;
+    private bool loss = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,7 +53,7 @@ public class stackController : MonoBehaviour
         }
     }
 
-    void OnJump()
+    public void OnJump()
     {
         isDropping = true;
         currentSlice.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, -0.01f);
@@ -74,8 +76,18 @@ public class stackController : MonoBehaviour
     {
         if (currentSlice.transform.position.y < -5)
         {
-            //reloads the scene
-            UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+            loss = true;
         }
+    }
+
+    public bool isFinished()
+    {
+        // this might not be right it might return finished if numSlices = 5 instead of 6
+        return ((iteration > numSlices) || loss);
+    }
+
+    public bool winGame()
+    {
+        return !loss;
     }
 }

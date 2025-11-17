@@ -4,11 +4,11 @@ using UnityEngine.InputSystem;
 public class inputManager : MonoBehaviour
 {
     [SerializeField] GameObject blurBG;
-    [SerializeField] GameObject art1;
-    [SerializeField] GameObject HoldAndRelease;
+    [SerializeField] GameObject startingArt;
+    [SerializeField] GameObject firstMinigame;
     [SerializeField] GameObject tapper;
     [SerializeField] GameObject secondMinigameArt;
-    [SerializeField] GameObject timeGuess;
+    [SerializeField] GameObject secondMinigame;
 
     //just for the background
     int numPressed = 0;
@@ -19,21 +19,21 @@ public class inputManager : MonoBehaviour
         if (numPressed == 0)
         {
             blurBG.SetActive(true);
-            art1.SetActive(true);
+            startingArt.SetActive(true);
             numPressed++;
         }
         // next press will bring up the hold and release minigame
         else if (numPressed == 1)
         {
             blurBG.GetComponent<SpriteRenderer>().sortingOrder = 5;
-            HoldAndRelease.SetActive(true);
+            firstMinigame.SetActive(true);
             numPressed++;
         }
         // if the second minigame art is active, next press begins the second minigame
         else if (secondMinigameArt.activeInHierarchy)
         {
             blurBG.GetComponent<SpriteRenderer>().sortingOrder = 5;
-            timeGuess.SetActive(true);
+            secondMinigame.SetActive(true);
         }
 
             tapper.GetComponent<tapAndHold>().OnReleaseButton();

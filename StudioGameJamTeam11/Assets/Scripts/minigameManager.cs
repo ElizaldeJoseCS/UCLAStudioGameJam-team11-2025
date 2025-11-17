@@ -16,6 +16,24 @@ public class minigameManager : MonoBehaviour
     [SerializeField] GameObject winArt2;
     [SerializeField] GameObject loseArt2;
 
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (tapper.activeInHierarchy)
+            checkHoldAndRelease();
+
+        if (timeManager.activeInHierarchy)
+            checkTimeGuess();
+
+    }
+
     void checkHoldAndRelease()
     {
         // if 10% of hits is greater than misses then pass
@@ -98,24 +116,7 @@ public class minigameManager : MonoBehaviour
     IEnumerator nextScene()
     {
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(3);
-    }
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(tapper.activeInHierarchy)
-            checkHoldAndRelease();
-
-        if(timeManager.activeInHierarchy)
-            checkTimeGuess();
-
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 }

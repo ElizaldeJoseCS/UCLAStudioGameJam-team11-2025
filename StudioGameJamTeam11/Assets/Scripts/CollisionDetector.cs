@@ -17,7 +17,6 @@ public class CollisionDetector : MonoBehaviour
             if (shouldDestroy)
             {
                 Destroy(other.gameObject);
-                placeNewTarget();
             }
             shouldDestroy = false;
         }
@@ -46,7 +45,7 @@ public class CollisionDetector : MonoBehaviour
         degree = input;
     }
 
-    void placeNewTarget()
+    public void placeNewTarget()
     {
         GameObject newPrefabInstance = Instantiate(targetPrefab, new Vector3(0,-1,0), Quaternion.Euler(0,0,90));
         float randDegree = Random.Range(degree, -1 * degree);
