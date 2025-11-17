@@ -5,12 +5,36 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RapidPattern.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: f33675fb85deb184b93baf42fda0543c
+  - enabled: 1
+    path: Assets/Scenes/DormLetter.unity
+    guid: f75c0f8a1ea2940ddbbbb1a859e06de5
+  - enabled: 1
+    path: Assets/Scenes/CulinaryLetter.unity
+    guid: eb14337ba3df846d39f9219fffbc73a9
+  - enabled: 0
+    path: Assets/Scenes/Dredge.unity
+    guid: 062fa822a3ee24926be1d966ccb7d99b
+  - enabled: 0
+    path: Assets/Scenes/HoldAndRelease.unity
+    guid: 690aceeba7fb7014fa79980c141ff481
+  - enabled: 1
+    path: Assets/Scenes/McLotLetter.unity
+    guid: 5c12924b8a5a54dab94e0a6849b32b99
+  - enabled: 1
+    path: Assets/Scenes/RestaurantLetter.unity
+    guid: d068cf0123ba94f90b8c80bb9ed5cde8
+  - enabled: 0
+    path: Assets/Scenes/Stacking.unity
+    guid: 2649aaef9dea9844a9ee90ca3ae4935f
+  - enabled: 0
+    path: Assets/Scenes/TimeGuess.unity
+    guid: e00976ccda4ef4a2ca281e21e3dc4695
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
