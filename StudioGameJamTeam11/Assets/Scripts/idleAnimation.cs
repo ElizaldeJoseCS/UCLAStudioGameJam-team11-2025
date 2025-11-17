@@ -50,6 +50,7 @@ public class idleAnimation : MonoBehaviour
         else
         {
             transform.position = new Vector3(-0.5f, 0, 0);
+            amplitude *= -1; // reverse swaying direction
             currTime = 0f;
         }
     }
