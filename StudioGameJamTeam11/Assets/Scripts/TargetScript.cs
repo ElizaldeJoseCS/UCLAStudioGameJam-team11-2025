@@ -3,7 +3,7 @@ using UnityEngine;
 public class TargetScript : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
-
+    [SerializeField] GameObject movementManager;
     [SerializeField] GameObject tapper;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

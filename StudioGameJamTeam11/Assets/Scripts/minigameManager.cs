@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class minigameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class minigameManager : MonoBehaviour
     [SerializeField] GameObject winArt1;
     [SerializeField] GameObject loseArt1;
     [SerializeField] GameObject startingArt;
+    [SerializeField] GameObject secondMinigameArt;
 
     void checkIfPassOrFail()
     {
@@ -29,20 +31,37 @@ public class minigameManager : MonoBehaviour
 
     IEnumerator winMinigame1()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         blurBG.GetComponent<SpriteRenderer>().sortingOrder = 2;
         winArt1.SetActive(true);
         HoldAndRelease.SetActive(false);
         startingArt.SetActive(false);
+
+        StartCoroutine(nextMiniGame());
     }
 
     IEnumerator loseMinigame1()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         blurBG.GetComponent<SpriteRenderer>().sortingOrder = 2;
         loseArt1.SetActive(true);
         HoldAndRelease.SetActive(false);
-        startingArt.SetActive(false);  
+        startingArt.SetActive(false);
+
+        StartCoroutine(backToMainMenu());
+    }
+
+    IEnumerator backToMainMenu()
+    {
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(0);
+    }
+
+    IEnumerator nextMiniGame()
+    {
+        yield return new WaitForSeconds(1.0f);
+        winArt1.SetActive(false);
+        secondMinigameArt.SetActive(true);
     }
 
 
@@ -57,5 +76,6 @@ public class minigameManager : MonoBehaviour
     {
         if(tapper.activeInHierarchy)
             checkIfPassOrFail();
+
     }
 }
