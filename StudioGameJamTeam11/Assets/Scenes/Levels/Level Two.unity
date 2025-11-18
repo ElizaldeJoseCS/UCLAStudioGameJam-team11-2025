@@ -4215,9 +4215,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2786931601631887081, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786931601631887081, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 2786931601631887081, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916464931810082064, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916464931810082064, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.95686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916464931810082064, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9607843
+      objectReference: {fileID: 0}
     - target: {fileID: 4958354036505949417, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
       propertyPath: m_Name
       value: BG
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399736211787088915, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7797437
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399736211787088915, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399736211787088915, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.92172104
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399736211787088915, guid: 37ca90f47c20e4db5b479aaf4e0f359e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
