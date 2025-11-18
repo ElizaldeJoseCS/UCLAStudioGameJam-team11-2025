@@ -2417,7 +2417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numSlices: 5
   stackSlice: {fileID: 7393215006769421387, guid: 260b0deff4d354c4587c8bb8af404f99, type: 3}
-  speed: 6
+  speed: 5
   bounds: 4
   padding: 0.7
   pan: {fileID: 8747389496319570457, guid: e234e792e0360fb4f92e720c33275e09, type: 3}
