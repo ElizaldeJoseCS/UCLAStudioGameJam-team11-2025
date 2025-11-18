@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro; // Use this for TextMeshPro
+ 
 
 public class inputManager : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class inputManager : MonoBehaviour
     [SerializeField] GameObject tapper;
     [SerializeField] GameObject secondMinigameArt;
     [SerializeField] GameObject timeGuess;
-
+    [SerializeField] TextMeshPro startText;
     //just for the background
     int numPressed = 0;
 
@@ -20,6 +22,7 @@ public class inputManager : MonoBehaviour
         {
             blurBG.SetActive(true);
             art1.SetActive(true);
+            startText.text = "";
             numPressed++;
         }
         // next press will bring up the hold and release minigame
