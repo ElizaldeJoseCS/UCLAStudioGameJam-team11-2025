@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro; // Use this for TextMeshPro
 
 public class InputManagerLevelThree : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class InputManagerLevelThree : MonoBehaviour
     [SerializeField] GameObject fourthMinigameArt;
     [SerializeField] GameObject fourthMinigame;
     [SerializeField] GameObject pointer;
+    [SerializeField] TextMeshPro continueText;
+
 
     //just for the background
     int numPressed = 0;
@@ -35,6 +38,7 @@ public class InputManagerLevelThree : MonoBehaviour
             blurBG.GetComponent<SpriteRenderer>().sortingOrder = 5;
             firstMinigame.SetActive(true);
             numPressed++;
+            continueText.text = "";
         }
         // if the second minigame art is active, next press begins the second minigame
         else if (secondMinigameArt.activeInHierarchy && numPressed == 2)
@@ -62,6 +66,7 @@ public class InputManagerLevelThree : MonoBehaviour
 
     void OnJump()
     {
+        
         if (stackManager.activeInHierarchy)
             stackManager.GetComponent<stackControllerLevelThree>().OnJump();
         if (cursor.activeInHierarchy)

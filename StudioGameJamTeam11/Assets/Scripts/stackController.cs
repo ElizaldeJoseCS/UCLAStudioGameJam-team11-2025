@@ -66,6 +66,8 @@ public class stackController : MonoBehaviour
         isDropping = true;
         currentSlice.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, -0.01f);
         currentSlice.GetComponent<Rigidbody2D>().gravityScale = 2;
+        SFXandMusic.instance.PlaySFX("stacking", transform.position);
+
     }
 
     void makeNewSliceLogic()

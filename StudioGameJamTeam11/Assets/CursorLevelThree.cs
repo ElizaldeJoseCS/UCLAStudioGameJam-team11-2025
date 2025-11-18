@@ -68,6 +68,8 @@ public class CursorLevelThree : MonoBehaviour
             // hit
             collisionDetector.GetComponent<CollisionDetector>().Destroy();
             numHits++;
+            SFXandMusic.instance.PlaySFX("stacking", transform.position);
+
             if (numHits < numTargets)
                 collisionDetector.GetComponent<CollisionDetector>().placeNewTarget();
         }

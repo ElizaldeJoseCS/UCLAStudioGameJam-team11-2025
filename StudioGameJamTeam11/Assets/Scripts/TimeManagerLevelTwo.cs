@@ -65,6 +65,8 @@ public class TimeManagerLevelTwo : MonoBehaviour
         if (startButton)
         {
             startButton.SetActive(false);
+            SFXandMusic.instance.PlayPartialSFX("Microwave", transform.position,5.0f,0.7f);
+
         }
         if (stopButton) stopButton.SetActive(true);
         if (resultText) resultText.text = "Timing... Click Stop!";
@@ -82,7 +84,12 @@ public class TimeManagerLevelTwo : MonoBehaviour
         float difference = Mathf.Abs(elapsedTime - 10f);
 
         // Update UI
-        if (stopButton) stopButton.SetActive(false);
+        if (stopButton)
+        {
+            stopButton.SetActive(false);
+            SFXandMusic.instance.PlaySFX("ovenend", transform.position);
+        }
+
         if (startButton) startButton.SetActive(true);
 
         // Display the result

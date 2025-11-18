@@ -98,19 +98,13 @@ public class TimeManager : MonoBehaviour
 
             if (elapsedTime >= 7 && elapsedTime <= 13)
             {
-                resultText.text = $"Nicely Done you timed {elapsedTime:F2} seconds";
+                resultText.text = $"Close Enough";
                 win = true;
-            }
-            else if (elapsedTime < 7)
-            {
-                resultText.text = $"Oh, {elapsedTime:F2} seconds, you've got some cold hard noodles.\n" +
-                                   "I didn't know it was possible to mess up cup noodles. Congrats?";
+
             }
             else
-            {
-                resultText.text = $"Wow {elapsedTime:F2} seconds, This thing is charred broski.\n" +
-                                   "Try again next time.";
-            }
+                resultText.text = $"You stopped at {elapsedTime:F2} seconds!\n" +
+                                  $"You were {difference:F2} seconds off.";
             gameFinished = true;
         }
     }
