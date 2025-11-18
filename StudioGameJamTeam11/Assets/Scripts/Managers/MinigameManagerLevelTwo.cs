@@ -75,9 +75,9 @@ public class MinigameManagerLevelTwo : MonoBehaviour
 
     void checkTimeGuess()
     {
-        if (timeGuess.GetComponent<TimeManager>().isFinished())
+        if (timeManager.GetComponent<TimeManagerLevelTwo>().isFinished())
         {
-            if (timeGuess.GetComponent<TimeManager>().winGame())
+            if (timeManager.GetComponent<TimeManagerLevelTwo>().winGame())
                 StartCoroutine(winMinigame3());
             else
                 StartCoroutine(loseMinigame3());
@@ -185,8 +185,8 @@ public class MinigameManagerLevelTwo : MonoBehaviour
     IEnumerator prepareMinigameFour()
     {
         yield return new WaitForSeconds(1.0f);
-        winArt2.SetActive(false);
-        thirdMinigameArt.SetActive(true);
+        winArt3.SetActive(false);
+        fourthMinigameArt.SetActive(true);
     }
 
     // fourth game is stacking game
@@ -213,7 +213,7 @@ public class MinigameManagerLevelTwo : MonoBehaviour
 
     IEnumerator nextScene()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.0f);
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }

@@ -9,6 +9,14 @@ public class stackController : MonoBehaviour
     [SerializeField] int bounds = 4;
     [SerializeField] float padding = 1f;
 
+    [SerializeField] GameObject bottomBun;
+    [SerializeField] GameObject sauce;
+    [SerializeField] GameObject burger;
+    [SerializeField] GameObject cheese;
+    [SerializeField] GameObject coleslaw;
+    [SerializeField] GameObject topBun;
+    [SerializeField] GameObject stick;
+
     private bool isDropping = false;
     private int iteration = 1;
     private GameObject currentSlice;
@@ -17,7 +25,7 @@ public class stackController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentSlice = Instantiate(stackSlice, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+        currentSlice = Instantiate(bottomBun, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
         iteration += 1;
     }
 
@@ -65,9 +73,41 @@ public class stackController : MonoBehaviour
         if (currentSlice.GetComponent<Rigidbody2D>().linearVelocity.y == 0 && currentSlice.GetComponent<Rigidbody2D>().linearVelocity.x== 0)
         {
             // create new slice
-            GameObject newSlice = Instantiate(stackSlice, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
-            currentSlice = newSlice;
-            isDropping = false;
+            if (iteration <= numSlices)
+            {
+                if (iteration == 2)
+                {
+                    GameObject newSlice = Instantiate(sauce, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+                    currentSlice = newSlice;
+                }
+                else if (iteration == 3)
+                {
+                    GameObject newSlice = Instantiate(burger, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+                    currentSlice = newSlice;
+                }
+                else if (iteration == 4)
+                {
+                    GameObject newSlice = Instantiate(cheese, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+                    currentSlice = newSlice;
+                }
+                else if (iteration == 5)
+                {
+                    GameObject newSlice = Instantiate(coleslaw, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+                    currentSlice = newSlice;
+                }
+                else if (iteration == 6)
+                {
+                    GameObject newSlice = Instantiate(topBun, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+                    currentSlice = newSlice;
+                }
+                else
+                {
+                    GameObject newSlice = Instantiate(stick, new Vector3(0, stackSlice.transform.position.y + padding * iteration, 0), Quaternion.identity);
+                    currentSlice = newSlice;
+                }
+
+                isDropping = false;
+            }
             iteration += 1;
         }
     }
@@ -83,7 +123,7 @@ public class stackController : MonoBehaviour
     public bool isFinished()
     {
         // this might not be right it might return finished if numSlices = 5 instead of 6
-        return ((iteration > numSlices) || loss);
+        return ((iteration > numSlices + 1) || loss);
     }
 
     public bool winGame()
