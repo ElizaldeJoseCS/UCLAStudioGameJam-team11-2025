@@ -74,7 +74,6 @@ public class tapAndHold : MonoBehaviour
             if (destory)
             {
                 Destroy(other.gameObject);
-                SFXandMusic.instance.PlaySFX("stacking", transform.position);
                 destory = false;
                 changeColor();
                 hits++;
@@ -105,7 +104,6 @@ public class tapAndHold : MonoBehaviour
             if (holding && validHoldTarget)
             {
                 Destroy(other.gameObject);
-                SFXandMusic.instance.PlaySFX("stacking", transform.position);
 
                 changeColor();
                 hits++;

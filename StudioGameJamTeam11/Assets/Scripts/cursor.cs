@@ -87,10 +87,8 @@ public class cursor : MonoBehaviour
 
     public bool winGame()
     {
-        Debug.Log("Hits: " + numHits + " Misses: " + numMisses);
         // need at least 80% hits to win
         float hitRate = (float)numHits / (float)(numHits + numMisses);
-        Debug.Log("Hit Rate: " + hitRate);
         return hitRate >= 0.8f;
     }
 }
