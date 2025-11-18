@@ -18,6 +18,7 @@ public class pointerScript : MonoBehaviour
     void FixedUpdate()
     {
         timeElapsed += Time.fixedDeltaTime;
+        Debug.Log(timeElapsed);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -51,6 +52,8 @@ public class pointerScript : MonoBehaviour
 
     public bool winGame()
     {
+        Debug.Log(!lost);
         return !lost;
+        
     }
 }

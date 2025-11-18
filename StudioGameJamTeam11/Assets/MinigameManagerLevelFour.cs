@@ -117,9 +117,9 @@ public class MinigameManagerLevelFour : MonoBehaviour
         if (pointer.GetComponent<pointerScript>().isFinished())
         {
             if (pointer.GetComponent<pointerScript>().winGame())
-                StartCoroutine(winMinigame4());
+                StartCoroutine(winMinigame5());
             else
-                StartCoroutine(loseMinigame4());
+                StartCoroutine(loseMinigame5());
         }
     }
 
@@ -129,9 +129,9 @@ public class MinigameManagerLevelFour : MonoBehaviour
         if (stacker.GetComponent<stackControllerLevelFour>().isFinished())
         {
             if (stacker.GetComponent<stackControllerLevelFour>().winGame())
-                StartCoroutine(winMinigame4());
+                StartCoroutine(winMinigame6());
             else
-                StartCoroutine(loseMinigame4());
+                StartCoroutine(loseMinigame6());
         }
     }
 
