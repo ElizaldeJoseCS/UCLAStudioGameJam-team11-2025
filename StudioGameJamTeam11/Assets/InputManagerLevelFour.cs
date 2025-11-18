@@ -83,9 +83,9 @@ public class InputManagerLevelFour : MonoBehaviour
     void OnJump()
     {
         if (stackManager.activeInHierarchy)
-            stackManager.GetComponent<stackControllerLevelThree>().OnJump();
+            stackManager.GetComponent<stackControllerLevelFour>().OnJump();
         if (cursor.activeInHierarchy)
-            cursor.GetComponent<CursorLevelThree>().OnJump();
+            cursor.GetComponent<CursorLevelFour>().OnJump();
         if (pointer.activeInHierarchy)
             pointer.GetComponent<pointerScript>().OnJump();
         if (tapper.activeInHierarchy)
