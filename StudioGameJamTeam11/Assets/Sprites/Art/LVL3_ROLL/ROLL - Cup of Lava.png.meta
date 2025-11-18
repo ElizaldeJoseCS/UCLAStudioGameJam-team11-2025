@@ -116,37 +116,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ROLL - Cup of Lava_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 160
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0a92d7c3b2c01f60800000000000000
-      internalID: 8003110615244773898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ROLL - Cup of Lava_1
       rect:
         serializedVersion: 2
-        x: 11
+        x: 0
         y: 0
-        width: 242
+        width: 253
         height: 292
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 945f68c7b89d71e4aa17b16de2b48b2d
     internalID: 0
     vertices: []
     indices: 
