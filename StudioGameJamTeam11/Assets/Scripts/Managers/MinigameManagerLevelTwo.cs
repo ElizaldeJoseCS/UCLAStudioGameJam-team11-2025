@@ -115,13 +115,13 @@ public class MinigameManagerLevelTwo : MonoBehaviour
         rapidPattern.SetActive(false);
         startingArt.SetActive(false);
 
-        StartCoroutine(backToMainMenu());
+        StartCoroutine(restartLevel());
     }
 
-    IEnumerator backToMainMenu()
+    IEnumerator restartLevel()
     {
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     IEnumerator prepareMinigameTwo()
@@ -150,7 +150,7 @@ public class MinigameManagerLevelTwo : MonoBehaviour
         secondMinigameArt.SetActive(false);
         HoldAndRelease.SetActive(false);
         loseArt.SetActive(true);
-        StartCoroutine(backToMainMenu());
+        StartCoroutine(restartLevel());
     }
 
     IEnumerator prepareMinigameThree()
@@ -179,7 +179,7 @@ public class MinigameManagerLevelTwo : MonoBehaviour
         thirdMinigameArt.SetActive(false);
         timeGuess.SetActive(false);
         loseArt.SetActive(true);
-        StartCoroutine(backToMainMenu());
+        StartCoroutine(restartLevel());
     }
 
     IEnumerator prepareMinigameFour()
@@ -208,7 +208,7 @@ public class MinigameManagerLevelTwo : MonoBehaviour
         fourthMinigameArt.SetActive(false);
         stackingGame.SetActive(false);
         loseArt.SetActive(true);
-        StartCoroutine(backToMainMenu());
+        StartCoroutine(restartLevel());
     }
 
     IEnumerator nextScene()

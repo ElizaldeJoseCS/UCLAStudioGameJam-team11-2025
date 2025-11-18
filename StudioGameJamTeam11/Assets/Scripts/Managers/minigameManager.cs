@@ -76,13 +76,13 @@ public class minigameManager : MonoBehaviour
         HoldAndRelease.SetActive(false);
         startingArt.SetActive(false);
 
-        StartCoroutine(backToMainMenu());
+        StartCoroutine(restartLevel());
     }
 
-    IEnumerator backToMainMenu()
+    IEnumerator restartLevel()
     {
         yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     IEnumerator nextMiniGame()
@@ -110,7 +110,7 @@ public class minigameManager : MonoBehaviour
         secondMinigameArt.SetActive(false);
         timeManager.SetActive(false);
         loseArt2.SetActive(true);
-        StartCoroutine(backToMainMenu());
+        StartCoroutine(restartLevel());
     }
 
     IEnumerator nextScene()
