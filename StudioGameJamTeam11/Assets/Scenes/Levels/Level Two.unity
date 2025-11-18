@@ -337,11 +337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5269718685354073780, guid: 851d28087b87f412aae13ee0d102f3f1, type: 3}
       propertyPath: m_text
-      value: 'Its time to cook some ramen
+      value: 'Its time to bake the fish patty
 
 
-        Try to leave  it there for 10
-        seconds! '
+        Try to leave  it there for
+        10 seconds! '
       objectReference: {fileID: 0}
     - target: {fileID: 8666064526157018683, guid: 851d28087b87f412aae13ee0d102f3f1, type: 3}
       propertyPath: m_SortingOrder
