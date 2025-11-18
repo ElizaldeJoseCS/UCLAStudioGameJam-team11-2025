@@ -121,6 +121,7 @@ public class MinigameManagerLevelThree : MonoBehaviour
     IEnumerator restartLevel()
     {
         yield return new WaitForSeconds(1.0f);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }
 
