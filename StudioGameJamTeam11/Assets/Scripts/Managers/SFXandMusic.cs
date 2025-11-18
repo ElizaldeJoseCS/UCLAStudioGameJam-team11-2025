@@ -66,4 +66,20 @@ public class SFXandMusic : MonoBehaviour
 
         Destroy(audioSource.gameObject, clip.length + 0.1f);
     }
+    public void PlayPartialSFX(string name, Vector3 position, float duration, float volume = 1f)
+{
+    if (!sfxLookup.TryGetValue(name, out AudioClip clip))
+    {
+        Debug.LogWarning($"SFX '{name}' not found!");
+        return;
+    }
+
+    AudioSource audioSource = Instantiate(sfxSourcePrefab, position, Quaternion.identity);
+    audioSource.volume = volume;
+    audioSource.clip = clip;
+    audioSource.Play();
+
+    // Stop early
+    Destroy(audioSource.gameObject, duration);  // duration < clip.length
+}
 }

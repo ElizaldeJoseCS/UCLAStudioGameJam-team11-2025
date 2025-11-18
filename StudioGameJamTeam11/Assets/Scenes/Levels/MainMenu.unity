@@ -534,7 +534,7 @@ PrefabInstance:
     - target: {fileID: 3938217777909502831, guid: 6c6c5cc2243734bcf9244919357ba9a3, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 21df8902729d8464d94b55ba9af06de6, type: 3}
+      objectReference: {fileID: 8300000, guid: 7e22cb1190f5349ef8337b99c0b65630, type: 3}
     - target: {fileID: 5458952163380709439, guid: 6c6c5cc2243734bcf9244919357ba9a3, type: 3}
       propertyPath: m_Name
       value: MusicObject
@@ -582,7 +582,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Space to Place !
+  m_text: 'Press Space to Play !
+
+    Press ESC for Audio Settings'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b0bd171b2457c4271b53f9bfc471f8c5, type: 2}
   m_sharedMaterial: {fileID: 39140703756799940, guid: b0bd171b2457c4271b53f9bfc471f8c5, type: 2}
@@ -647,7 +649,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -380.23804, w: -49.400513}
+  m_margin: {x: 0, y: 0, z: -631.5242, w: -49.400513}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1006,6 +1008,22 @@ PrefabInstance:
     - target: {fileID: 2304451122091403145, guid: 958156555ac074589b6945fbfe80ca44, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610569708351057249, guid: 958156555ac074589b6945fbfe80ca44, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2093.9497
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610569708351057249, guid: 958156555ac074589b6945fbfe80ca44, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1437.5238
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610569708351057249, guid: 958156555ac074589b6945fbfe80ca44, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.8946
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610569708351057249, guid: 958156555ac074589b6945fbfe80ca44, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50.3737
       objectReference: {fileID: 0}
     - target: {fileID: 2649976136673597994, guid: 958156555ac074589b6945fbfe80ca44, type: 3}
       propertyPath: m_AnchoredPosition.x

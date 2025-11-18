@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class InputManagerLevelTwo : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class InputManagerLevelTwo : MonoBehaviour
     [SerializeField] GameObject fourthMinigameArt;
     [SerializeField] GameObject fourthMinigame;
     [SerializeField] GameObject stackingManager;
+    [SerializeField] TextMeshPro continueText;
 
     //just for the background
     int numPressed = 0;
@@ -27,6 +29,8 @@ public class InputManagerLevelTwo : MonoBehaviour
         {
             blurBG.SetActive(true);
             startingArt.SetActive(true);
+            continueText.text = "";
+
             numPressed++;
         }
         // next press will bring up the hold and release minigame
