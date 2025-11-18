@@ -59,11 +59,11 @@ public class MinigameManagerLevelFour : MonoBehaviour
         }
         else if (pointer.activeInHierarchy)
         {
-            checkGame4();
+            checkGame5();
         }
         else if (stacker.activeInHierarchy)
         {
-            checkGame4();
+            checkGame6();
         }
     }
 
@@ -215,7 +215,7 @@ public class MinigameManagerLevelFour : MonoBehaviour
 
     IEnumerator loseMinigame3()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(2.5f);
         blurBG.GetComponent<SpriteRenderer>().sortingOrder = 2;
         thirdMinigameArt.SetActive(false);
         TimeGame.SetActive(false);
