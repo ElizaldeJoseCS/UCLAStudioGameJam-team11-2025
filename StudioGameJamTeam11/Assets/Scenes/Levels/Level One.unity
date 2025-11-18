@@ -2883,6 +2883,7 @@ MonoBehaviour:
   tapper: {fileID: 618375451}
   secondMinigameArt: {fileID: 1877349895}
   timeGuess: {fileID: 622839099}
+  startText: {fileID: 978468692}
 --- !u!1 &1653762121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2270953542802877954, guid: edc49e465954f42bcbd089dbe5db1f2c, type: 3}
