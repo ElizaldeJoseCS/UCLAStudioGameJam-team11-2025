@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level Three.unity
     guid: 2a97bf9afd7c64f86bf44c134cce79ef
   - enabled: 1
+    path: Assets/Scenes/Levels/Credits.unity
+    guid: ec2c2780cf9fb604a9ba5af44b7050c3
+  - enabled: 1
     path: Assets/Scenes/Letters/RestaurantLetter.unity
     guid: d068cf0123ba94f90b8c80bb9ed5cde8
   - enabled: 1

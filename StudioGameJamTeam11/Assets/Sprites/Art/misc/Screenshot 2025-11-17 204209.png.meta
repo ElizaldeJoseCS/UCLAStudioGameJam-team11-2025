@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: c77ecc2e27672451c979a49296b78bb2
+guid: 937f6eb060a768d4989495cc64941c80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8003110615244773898
-    second: ROLL - Cup of Lava_0
-  - first:
-      213: -197164078432184086
-    second: ROLL - Cup of Lava_1
+      213: 5038376710892804394
+    second: Screenshot 2025-11-17 204209_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ROLL - Cup of Lava_1
+      name: Screenshot 2025-11-17 204209_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 253
-        height: 292
+        width: 1181
+        height: 663
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae81596b058834df0800000000000000
-      internalID: -197164078432184086
+      spriteID: a29dd519ce8ebe540800000000000000
+      internalID: 5038376710892804394
       vertices: []
       indices: 
       edges: []
@@ -141,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 945f68c7b89d71e4aa17b16de2b48b2d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -151,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ROLL - Cup of Lava_0: 8003110615244773898
-      ROLL - Cup of Lava_1: -197164078432184086
+      Screenshot 2025-11-17 204209_0: 5038376710892804394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -91,13 +91,19 @@ public class TimeManagerLevelTwo : MonoBehaviour
 
             if (elapsedTime >= 7 && elapsedTime <= 13)
             {
-                resultText.text = $"Close Enough";
+                resultText.text = $"Close Enough, You stopped at {elapsedTime:F2} seconds!\n";
                 win = true;
 
             }
+            else if (elapsedTime < 7)
+            {
+                resultText.text = $"Yikes, {elapsedTime:F2} seconds, You gave some poor axolotyl Salmonella. \n" + 
+                                   "He's dead and you're fired Brodie, tough luck.";
+            }
             else
-                resultText.text = $"You stopped at {elapsedTime:F2} seconds!\n" +
-                                  $"You were {difference:F2} seconds off.";
+            {
+                resultText.text = $"You timed {elapsedTime:F2} seconds, This thing is burnt and you're fired\n";
+            }
             gameFinished = true;
         }
     }

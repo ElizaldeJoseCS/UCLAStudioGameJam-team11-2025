@@ -14,12 +14,12 @@ public class TargetScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (transform.position.y <= 5)
+        if (transform.position.x <= 5)
         {
             show();
         }
         // if the target goes off screen to the left, delete it and update (the score and also create a new target)
-        if (transform.position.y <= -5)
+        if (transform.position.x <= -5)
         {
             deleteAndUpdate();
         }
