@@ -10,13 +10,17 @@ public class CursorLevelFour : MonoBehaviour
 
     private int numHits = 0;
     private int numMisses = 0;
-    private int speedCap = 3;
+    private float speedCap = 1.6f;
+    private float timeTillMaxSpeed = 10f;
+    private float speedIncreaseRate;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         cursorIncrement = cursorSpeed;
         collisionDetector.GetComponent<CollisionDetector>().setDegree(degreeBoundary);
+
+        speedIncreaseRate = (speedCap - cursorSpeed) / timeTillMaxSpeed;
     }
 
     // Update is called once per frame
@@ -97,11 +101,9 @@ public class CursorLevelFour : MonoBehaviour
 
     void speedIncreaseOverTime()
     {
-        // increase speed every 2 hits, up to a max speed
-        if (numHits > 0 && numHits % 2 == 0)
-        {
-            float targetSpeed = Mathf.Min(cursorSpeed + 0.25f*(numHits / 2), speedCap);
-            cursorIncrement = Mathf.Sign(cursorIncrement) + targetSpeed;
-        }
+        if(cursorIncrement > 0)
+            cursorIncrement += speedIncreaseRate * Time.deltaTime;
+        else
+            cursorIncrement -= speedIncreaseRate * Time.deltaTime;
     }
 }

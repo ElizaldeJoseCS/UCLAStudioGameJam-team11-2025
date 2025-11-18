@@ -1076,10 +1076,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2734149256685664009, guid: 851d28087b87f412aae13ee0d102f3f1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 851d28087b87f412aae13ee0d102f3f1, type: 3}
 --- !u!224 &223888757 stripped
 RectTransform:
@@ -1149,10 +1146,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5411207038111336948, guid: 28b355af33c5940e38d0994876b40635, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b355af33c5940e38d0994876b40635, type: 3}
 --- !u!1 &244917470 stripped
 GameObject:
@@ -3374,10 +3368,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2486490784646173922, guid: 15e38da93b0194d3da556951b8e837e1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15e38da93b0194d3da556951b8e837e1, type: 3}
 --- !u!114 &891628671 stripped
 MonoBehaviour:
@@ -4268,10 +4259,10 @@ MonoBehaviour:
   startingArt: {fileID: 706937810}
   firstMinigame: {fileID: 150382232}
   cursor: {fileID: 551785963}
-  secondMinigameArt: {fileID: 0}
+  secondMinigameArt: {fileID: 1592769953}
   secondMinigame: {fileID: 1874825344}
   tapper: {fileID: 382516170}
-  thirdMinigameArt: {fileID: 0}
+  thirdMinigameArt: {fileID: 840825434}
   thirdMinigame: {fileID: 409648473}
   timer: {fileID: 285400568}
   fourthMinigameArt: {fileID: 550046433}
@@ -4770,10 +4761,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3438740148699453470, guid: d12d43798f20741c985e8eb8a4e19b45, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d12d43798f20741c985e8eb8a4e19b45, type: 3}
 --- !u!1 &1297348989 stripped
 GameObject:
@@ -4868,7 +4856,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1300579708}
-  - component: {fileID: 1300579707}
   - component: {fileID: 1300579709}
   m_Layer: 0
   m_Name: GameManager
@@ -4877,36 +4864,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1300579707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300579706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 937fa185493a85d42ae787e3b82fa31c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blurBG: {fileID: 1520825396}
-  loseArt: {fileID: 360531893}
-  startingArt: {fileID: 706937810}
-  rapidPattern: {fileID: 150382232}
-  cursor: {fileID: 551785963}
-  winArt1: {fileID: 1513184099}
-  secondMinigameArt: {fileID: 588758992}
-  stackGame: {fileID: 1960584532}
-  stackManager: {fileID: 465817074}
-  winArt2: {fileID: 635205053}
-  thirdMinigameArt: {fileID: 0}
-  holdAndRelease: {fileID: 1874825344}
-  tapper: {fileID: 382516170}
-  winArt3: {fileID: 0}
-  fourthMinigameArt: {fileID: 0}
-  dredge: {fileID: 1223374529}
-  pointer: {fileID: 1223374527}
-  winArt4: {fileID: 0}
 --- !u!4 &1300579708
 Transform:
   m_ObjectHideFlags: 0
@@ -4934,32 +4891,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9136dcf02fcdec64c928e24ca9258123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blurBG: {fileID: 0}
-  loseArt: {fileID: 0}
-  startingArt: {fileID: 0}
-  rapidPattern: {fileID: 0}
-  cursor: {fileID: 0}
-  winArt1: {fileID: 0}
-  secondMinigameArt: {fileID: 0}
-  HoldAndRelease: {fileID: 0}
-  tapper: {fileID: 0}
-  winArt2: {fileID: 0}
-  thirdMinigameArt: {fileID: 0}
-  TimeGame: {fileID: 0}
-  timer: {fileID: 0}
-  winArt3: {fileID: 0}
-  fourthMinigameArt: {fileID: 0}
-  HoldAndRelease2: {fileID: 0}
-  tapper2: {fileID: 0}
-  winArt4: {fileID: 0}
-  fifthMinigameArt: {fileID: 0}
-  DredgeGame: {fileID: 0}
-  pointer: {fileID: 0}
-  winArt5: {fileID: 0}
-  sixthMinigameArt: {fileID: 0}
-  StackingGame: {fileID: 0}
-  stacker: {fileID: 0}
-  winArt6: {fileID: 0}
+  blurBG: {fileID: 1520825396}
+  loseArt: {fileID: 360531893}
+  startingArt: {fileID: 706937810}
+  rapidPattern: {fileID: 150382232}
+  cursor: {fileID: 551785963}
+  winArt1: {fileID: 1513184099}
+  secondMinigameArt: {fileID: 1592769953}
+  HoldAndRelease: {fileID: 1874825344}
+  tapper: {fileID: 382516170}
+  winArt2: {fileID: 1970491248}
+  thirdMinigameArt: {fileID: 840825434}
+  TimeGame: {fileID: 409648473}
+  timer: {fileID: 285400568}
+  winArt3: {fileID: 1762731164}
+  fourthMinigameArt: {fileID: 550046433}
+  HoldAndRelease2: {fileID: 1603454394}
+  tapper2: {fileID: 1029983254}
+  winArt4: {fileID: 99559589}
+  fifthMinigameArt: {fileID: 494499061}
+  DredgeGame: {fileID: 1223374529}
+  pointer: {fileID: 1223374527}
+  winArt5: {fileID: 1468321292}
+  sixthMinigameArt: {fileID: 588758992}
+  StackingGame: {fileID: 1960584532}
+  stacker: {fileID: 465817074}
+  winArt6: {fileID: 635205053}
 --- !u!1 &1468321292
 GameObject:
   m_ObjectHideFlags: 0
