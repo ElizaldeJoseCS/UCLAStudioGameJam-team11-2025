@@ -116,37 +116,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FLAMBE - Tentacle Stacker_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 13
-        width: 105
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fe9107989ddc6baf0800000000000000
-      internalID: -380890784268805649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: FLAMBE - Tentacle Stacker_1
       rect:
         serializedVersion: 2
-        x: 104
+        x: 0
         y: 0
-        width: 176
+        width: 280
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +141,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cae3f0ff2d34c574189e094886c8f8f8
     internalID: 0
     vertices: []
     indices: 
