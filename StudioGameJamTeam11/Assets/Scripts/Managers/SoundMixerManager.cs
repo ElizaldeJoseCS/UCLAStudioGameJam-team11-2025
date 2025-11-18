@@ -5,7 +5,18 @@ using UnityEngine.Audio;
 
 public class SoundMixerManager : MonoBehaviour
 {
+    [SerializeField] GameObject soundPanel;
+
     [SerializeField] private AudioMixer audioMixer;
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            soundPanel.SetActive(!soundPanel.activeSelf);
+        }
+    }
+
 
     public void SetMasterVolume(float level)
     {
@@ -20,4 +31,6 @@ public class SoundMixerManager : MonoBehaviour
     {
         audioMixer.SetFloat("musicVolume", level);
     }
+    
 }
+

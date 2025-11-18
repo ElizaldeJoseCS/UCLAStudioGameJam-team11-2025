@@ -4,16 +4,9 @@ using UnityEngine.InputSystem;
 
 public class PlayButton : MonoBehaviour
 {
-[SerializeField] GameObject soundPanel;
 [SerializeField] GameObject playButton;
 
-void Update()
-{
-    if (Input.GetKeyDown(KeyCode.Escape))
-    {
-        soundPanel.SetActive(!soundPanel.activeSelf);
-    }
-}
+
 
 
     void OnJump()
